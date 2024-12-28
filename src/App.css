@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ef5350;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .controls {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.loader {
+  font-size: 24px;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+}
+
+.no-results {
+  font-size: 18px;
+  color: #555;
+}
+
+.controls > * {
+  margin: 10px 0;
+}
